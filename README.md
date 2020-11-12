@@ -1,5 +1,23 @@
 # Personal blog with React
-
+├───public
+└───src
+    ├───components
+    │   ├───BlogPost
+    │   ├───Footer
+    │   ├───Header
+    │   ├───Hero
+    │   ├───Layout
+    │   ├───Logo
+    │   ├───Sidebar
+    │   ├───Submenu
+    │   └───UI
+    │       └───Card
+    ├───containers
+    │   ├───ContactForm
+    │   ├───Home
+    │   │   └───FeaturedPost
+    │   └───Post
+    └───data
 
 
 ### `npm start`
