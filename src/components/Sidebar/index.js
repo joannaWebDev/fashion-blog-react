@@ -25,7 +25,7 @@ const Sidebar = (props) => {
                     <h3>About</h3>
                 </div>
                 <div className="profileImageContainer">
-                    <img src="/about-me.jpg" alt="Me" />
+                    <img src={process.env.PUBLIC_URL + '/about-me.jpg'} alt="Me" />
                 </div>
                 <div className="cardBody">
                     <h6>THE STORY BEHIND DOJO GIRL</h6>

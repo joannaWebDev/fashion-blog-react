@@ -12,7 +12,7 @@ const FeaturedPost = () => {
     <div className="blogPostContainer">
         <Card style={{ marginBottom: '20px', padding: '20px'}}>
             <div className="postImageWrapper">
-                <img src="/image-1.jpg " alt="An alter me" width="450" height="300"/>
+                <img src={process.env.PUBLIC_URL + '/image-1.jpg'} alt="An alter me" width="450" height="300"/>
             </div>
             <div className="featured-post">
                 <h1>EMMA ROBERTS COVERS 'COSMOPOLITAN'</h1>

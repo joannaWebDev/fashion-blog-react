@@ -20,7 +20,8 @@ const ImageGallery = (props) => (
         <h2 className="home-title">Most discussed posts</h2>
         <div className="gallery-post" style={props.galleryStyle}>                
                 <section className="mainImageWrapper">              
-                        <a href="/post/cardi-b-with-reebok"><img src="/image-2.jpg" alt="Image post" title="CARDI B LAUNCHES COLLECTION WITH REEBOK"/>
+                        <a href="/post/cardi-b-with-reebok">
+                            <img src={process.env.PUBLIC_URL + '/image-2.jpg'} alt="Image post" title="CARDI B LAUNCHES COLLECTION WITH REEBOK"/>
                         <p>CARDI B LAUNCHES COLLECTION WITH REEBOK</p>  
                         </a>                  
                 </section>                
@@ -33,7 +34,8 @@ const ImageGallery = (props) => (
                             <div className="imageWrapper">
                                 <SideImage 
                                     height={props.sideImageHeight}
-                                    src={`/${blog.blogImage}`}
+                                    src={`${process.env.PUBLIC_URL}  /${blog.blogImage}`}
+                                  /*   src={`/${blog.blogImage}`} */
                                     key={i}                           
                                 />
                                 <p className="featured-image-title">{blog.blogTitle}</p>  
