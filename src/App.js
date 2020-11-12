@@ -12,7 +12,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/fashion-blog-react">
       <div className="App">
         <Header />
         <Hero />
