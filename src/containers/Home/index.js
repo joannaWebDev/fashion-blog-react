@@ -35,8 +35,7 @@ const ImageGallery = (props) => (
                             <div className="imageWrapper">
                                 <SideImage 
                                     height={props.sideImageHeight}
-                                    src={`${process.env.PUBLIC_URL}/${blog.blogImage}`}
-                                  /*   src={`/${blog.blogImage}`} */
+                                    src={`${process.env.PUBLIC_URL}/${blog.blogImage}`}                                 
                                     key={i}                           
                                 />
                                 <p className="featured-image-title">{blog.blogTitle}</p>  
