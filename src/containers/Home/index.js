@@ -5,6 +5,7 @@ import Card from '../../components/UI/Card';
 import FeaturedPost from './FeaturedPost';
 import blogData from '../../data/blog.json';
 import Layout from '../../components/Layout';
+import { Link} from 'react-router-dom';
 
 import './style.css';
 const SideImage = (props) => {
@@ -30,7 +31,7 @@ const ImageGallery = (props) => (
                         props.blogArray
                         .filter((i, index) => (index > 0 && index < 4))
                         .map((blog,i) => 
-                        <a href={`post/${blog.slug}`}>
+                        <Link to={`post/${blog.slug}`}>                        
                             <div className="imageWrapper">
                                 <SideImage 
                                     height={props.sideImageHeight}
@@ -40,7 +41,7 @@ const ImageGallery = (props) => (
                                 />
                                 <p className="featured-image-title">{blog.blogTitle}</p>  
                             </div> 
-                        </a>
+                            </Link>                    
                         )                       
                     }                                                                 
                 </section>
