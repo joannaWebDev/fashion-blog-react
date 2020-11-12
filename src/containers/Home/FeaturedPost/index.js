@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../../components/UI/Card';
+import { Link} from 'react-router-dom';
 
 import './style.css';
 
@@ -19,7 +20,7 @@ const FeaturedPost = () => {
                 <span>posted on November 21st, 2020</span>
                 <p>Following the release of a sneaker on her birthday last month, Reebok is launching the full Club C collection by Cardi B. (The partnership is also on the cover of Footwear News.) The Club C Cardi ($100) and the Cardi Coated Club C Double ($80) come in three colorways — white, red and black — and will be available in both women's and children's sizing on Reebok.com and at Foot Locker starting on Nov. 13.</p>
                 <p>Emma Roberts appears on the cover the December/January issue of Cosmopolitan photographed by Sasha Samsonova</p>
-                <a href={process.env.PUBLIC_URL + '/post/cardi-b-with-reebok'} className="read-more">Read More</a>
+                <Link to="/post/cardi-b-with-reebok" className="read-more">Read More</Link>
             </div>
         </Card> 
     </div>
