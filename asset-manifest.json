@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/fashion-blog-react/static/css/main.a3eb20db.chunk.css",
-    "main.js": "/fashion-blog-react/static/js/main.750447f2.chunk.js",
-    "main.js.map": "/fashion-blog-react/static/js/main.750447f2.chunk.js.map",
+    "main.js": "/fashion-blog-react/static/js/main.a4c6bca3.chunk.js",
+    "main.js.map": "/fashion-blog-react/static/js/main.a4c6bca3.chunk.js.map",
     "runtime-main.js": "/fashion-blog-react/static/js/runtime-main.9ddb62ce.js",
     "runtime-main.js.map": "/fashion-blog-react/static/js/runtime-main.9ddb62ce.js.map",
     "static/css/2.24192d93.chunk.css": "/fashion-blog-react/static/css/2.24192d93.chunk.css",
-    "static/js/2.caaf88d3.chunk.js": "/fashion-blog-react/static/js/2.caaf88d3.chunk.js",
-    "static/js/2.caaf88d3.chunk.js.map": "/fashion-blog-react/static/js/2.caaf88d3.chunk.js.map",
+    "static/js/2.bed2fcf0.chunk.js": "/fashion-blog-react/static/js/2.bed2fcf0.chunk.js",
+    "static/js/2.bed2fcf0.chunk.js.map": "/fashion-blog-react/static/js/2.bed2fcf0.chunk.js.map",
     "index.html": "/fashion-blog-react/index.html",
     "static/css/2.24192d93.chunk.css.map": "/fashion-blog-react/static/css/2.24192d93.chunk.css.map",
     "static/css/main.a3eb20db.chunk.css.map": "/fashion-blog-react/static/css/main.a3eb20db.chunk.css.map",
-    "static/js/2.caaf88d3.chunk.js.LICENSE.txt": "/fashion-blog-react/static/js/2.caaf88d3.chunk.js.LICENSE.txt"
+    "static/js/2.bed2fcf0.chunk.js.LICENSE.txt": "/fashion-blog-react/static/js/2.bed2fcf0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9ddb62ce.js",
     "static/css/2.24192d93.chunk.css",
-    "static/js/2.caaf88d3.chunk.js",
+    "static/js/2.bed2fcf0.chunk.js",
     "static/css/main.a3eb20db.chunk.css",
-    "static/js/main.750447f2.chunk.js"
+    "static/js/main.a4c6bca3.chunk.js"
   ]
 }
