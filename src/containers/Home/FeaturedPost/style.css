@@ -1,0 +1,27 @@
+.postImageWrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+.postImageWrapper img{
+    object-fit: cover;
+    max-width: 80vw;
+}
+.featured-post h1 {
+    text-align: center;
+}
+.featured-post p {
+    margin: 5% 2%;
+    text-align: left;
+}
+
+.featured-post span {
+    font-style: italic;
+    text-align: center;
+}
+.read-more {
+    color: #6c6c6c;
+    margin: 2%;
+}
+.read-more:hover {
+    text-transform: uppercase;
+}

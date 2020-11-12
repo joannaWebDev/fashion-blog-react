@@ -1,0 +1,70 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React from 'react';
+import Card from '../../components/UI/Card';
+import FeaturedPost from './FeaturedPost';
+import blogData from '../../data/blog.json';
+import Layout from '../../components/Layout';
+
+import './style.css';
+const SideImage = (props) => {
+    return (       
+            <div style={{ height: `${props.height}px` }}>
+                <img src={props.src} alt="Featurest Posts image" />
+            </div>
+    );
+}
+
+const ImageGallery = (props) => ( 
+    <div className="image-gallery">
+        <h2 className="home-title">Most discussed posts</h2>
+        <div className="gallery-post" style={props.galleryStyle}>                
+                <section className="mainImageWrapper">              
+                        <a href="/post/cardi-b-with-reebok"><img src="/image-2.jpg" alt="Image post" title="CARDI B LAUNCHES COLLECTION WITH REEBOK"/>
+                        <p>CARDI B LAUNCHES COLLECTION WITH REEBOK</p>  
+                        </a>                  
+                </section>                
+                <section className={"sideImageWrapper"}  >
+                {
+                        props.blogArray
+                        .filter((i, index) => (index > 0 && index < 4))
+                        .map((blog,i) => 
+                        <a href={`post/${blog.slug}`}>
+                            <div className="imageWrapper">
+                                <SideImage 
+                                    height={props.sideImageHeight}
+                                    src={`/${blog.blogImage}`}
+                                    key={i}                           
+                                />
+                                <p className="featured-image-title">{blog.blogTitle}</p>  
+                            </div> 
+                        </a>
+                        )                       
+                    }                                                                 
+                </section>
+        </div>
+    </div>
+);
+
+const Home  = props => {
+    const blogArray = blogData.data.map(post => {
+        return {
+            "blogImage": post.blogImage, 
+            "blogTitle": post.blogTitle, 
+            "slug": post.slug
+        };
+    });
+    
+    return (
+        <>
+            <Card style={{ marginBottom: '10px', padding: '20px',backgroundColor:' #ecd574'}}>
+                <ImageGallery blogArray={blogArray}/>
+            </Card>           
+            <Layout>
+                <FeaturedPost />
+            </Layout>
+        </>
+    );
+}
+
+export default Home;

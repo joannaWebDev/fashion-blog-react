@@ -1,0 +1,46 @@
+.submenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 5%;
+}
+
+.submenu ul li{
+    display: inline-block;
+}
+.submenu ul li a{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #565673;
+    padding: 0 10px;
+}
+.search form{
+    display: flex;
+    margin: 0 10px;
+}
+
+.searchInput{
+    border: 0;
+    width: 0;
+    transition: width 0.5s ease-in;
+}
+
+.searchIcon{
+    cursor: pointer;
+    border: 0;
+}
+
+.searchIcon:focus{
+    outline:none;
+}
+
+.searchInput.active {
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .search form{
+        display: none
+    }
+}
