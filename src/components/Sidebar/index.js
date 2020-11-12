@@ -57,7 +57,7 @@ const Sidebar = (props) => {
                         .filter((i, index) => (index < 4))
                         .map(post => {
                             return (
-                                <NavLink key={post.id} to={`/post/${post.slug}`}>
+                                <NavLink key={post.id} to={`${process.env.PUBLIC_URL}/post/${post.slug}`}/* {`/post/${post.slug}`} */>
                                     <div className="recentPost">
                                         <h5>{post.blogTitle}</h5>
                                         <span>{post.postedOn}</span>
