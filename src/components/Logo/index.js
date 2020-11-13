@@ -8,7 +8,7 @@ import './style.css';
 const Logo = (props) => {
   return(
     <div className="logo">
-        <a href={process.env.PUBLIC_URL}>Fashion Girl</a>
+        <a href={process.env.PUBLIC_URL}>Fashion Gal</a>
     </div>
    )
 

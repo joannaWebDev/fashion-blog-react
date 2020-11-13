@@ -4,7 +4,7 @@ import './style.css';
 
 const Footer = () => {
     return (
-        <p className="footer">Fashion Girl &#169; Built with React</p>
+        <p className="footer">Fashion Gal &#169; Built with React</p>
     )
 }
 
