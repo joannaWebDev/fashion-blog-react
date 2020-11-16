@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import Card from '../../components/UI/Card';
-import FeaturedPost from './FeaturedPost';
+import FeaturedPost from './FeaturedPost/FeaturedPost';
 import blogData from '../../data/blog.json';
-import Layout from '../../components/Layout';
+import Layout from '../../components/Layout/Layout';
 import { Link} from 'react-router-dom';
 
 import './style.css';
@@ -30,7 +30,7 @@ const ImageGallery = (props) => (
                 {
                         props.blogArray
                         .filter((i, index) => (index > 0 && index < 4))
-                        .map((blog,i) => 
+                        .map((blog, i) => 
                         <Link to={`post/${blog.slug}`}>                        
                             <div className="imageWrapper">
                                 <SideImage 

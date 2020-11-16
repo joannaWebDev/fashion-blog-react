@@ -40,7 +40,7 @@ const BlogPost = (props) => {
 
                 <div className="postImageContainer">
                     <img src={`${process.env.PUBLIC_URL}/${post.blogImage}`}
-                     alt="Post Images " />     
+                        alt="Post Images " />     
                 </div>
 
                 <div className="postContent">

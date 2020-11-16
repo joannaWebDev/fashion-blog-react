@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../Logo';
-import Searchbar from '../Submenu';
+import Logo from '../Logo/Logo';
+import Searchbar from '../Searchbar/SearchBar';
 
 import './style.css';
 

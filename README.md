@@ -32,3 +32,4 @@ Follow this tutorial in order to properly setup the form https://medium.com/week
 
 ### `deploy your project on GitHub` 
 Follow this tutorial https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+
