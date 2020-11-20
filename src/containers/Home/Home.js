@@ -29,8 +29,8 @@ const ImageGallery = (props) => (
                 <section className={"sideImageWrapper"}  >
                 {
                         props.blogArray
-                        .filter((index) => (index > 0 && index < 4))
-                        .map((blog) => 
+                        .filter((i, index) => (index > 0 && index < 4))
+                        .map((blog,i) => 
                         <Link to={`post/${blog.slug}`}>                        
                             <div className="imageWrapper">
                                 <SideImage 
@@ -41,7 +41,7 @@ const ImageGallery = (props) => (
                                 />
                                 <p className="featured-image-title">{blog.blogTitle}</p>  
                             </div> 
-                            </Link>                    
+                        </Link>                    
                         )                       
                     }                                                                 
                 </section>
